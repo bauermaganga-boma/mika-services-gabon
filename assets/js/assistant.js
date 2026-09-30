@@ -64,8 +64,8 @@
       answer: "MIKA Services accompagne les populations concernées par ses chantiers. À <strong>Akémi-Ndjogoni</strong> et à la Baie des Cochons, les familles impactées ont reçu leurs chèques d'indemnisation lors d'une cérémonie officielle, en présence du ministre de l'Habitat et du gouverneur de l'Estuaire." },
     { id: 'qualite', keys: ['qualite', 'securite', 'norme', 'garantie', 'confiance', 'serieux', 'fiable', 'valeur'],
       answer: "La <strong>qualité des ouvrages</strong> et la <strong>rapidité d'exécution</strong> ont valu à MIKA Services la confiance de l'État gabonais. Nos chantiers sont régulièrement inspectés par les autorités, dont le ministre des Travaux publics." },
-    { id: 'emploi', keys: ['emploi', 'recrut', 'stage', 'cv', 'candidature', 'travailler chez', 'job', 'poste', 'embauche'],
-      answer: "Pour une candidature ou un stage, envoyez-nous un message en précisant le poste visé :<br>" + waButton("Bonjour MIKA Services, je souhaite déposer une candidature.", 'Candidater sur WhatsApp') },
+    { id: 'emploi', keys: ['emploi', 'recrut', 'stage', 'offres de stage', 'offre de stage', 'stagiaire', 'cv', 'candidature', 'candidater', 'postuler', 'travailler chez', 'job', 'poste', 'embauche', 'offre d emploi', 'carriere', 'ingenieur', 'mecanicien', 'technicien', 'conducteur', 'topographe'],
+      answer: "MIKA Services recrute ! Consultez nos <strong>offres ouvertes</strong> (ingénieurs, conducteurs de travaux, mécaniciens, techniciens, stages…) et postulez en ligne en joignant votre CV et votre lettre de motivation.<a class=\"chat__link\" href=\"#carrieres\" data-close>Voir les offres d'emploi</a>" },
     { id: 'fournisseur', keys: ['fournisseur', 'fournisseur de', 'fournir', 'partenaire', 'partenariat', 'sous-trait', 'sous trait', 'location', 'louer', 'loue', 'collaborer', 'proposer mes'],
       answer: "Fournisseurs et partenaires (matériel, sous-traitance, location d'engins) peuvent nous présenter leur offre :<br>" + waButton("Bonjour MIKA Services, je souhaite vous proposer un partenariat.", 'Nous écrire sur WhatsApp') },
     { id: 'merci', keys: ['merci', 'au revoir', 'bye', 'a bientot', 'parfait', 'super', 'ok merci'],
@@ -75,9 +75,9 @@
   var CHIP_MAP = {
     'Nos métiers': 'services', 'Routes': 'routes', 'Échangeur': 'ouvrage', 'Aménagements': 'amenagement',
     'Grands projets': 'refs', 'Vidéos': 'videos', 'Le groupe': 'groupe', 'Direction': 'direction',
-    'Nos moyens': 'moyens', 'Présenter un projet': 'devis', 'Contact': 'contact', 'Où êtes-vous ?': 'zone'
+    'Nos moyens': 'moyens', 'Présenter un projet': 'devis', 'Contact': 'contact', 'Où êtes-vous ?': 'zone', 'Nous recrutons': 'emploi'
   };
-  var DEFAULT_CHIPS = ['Nos métiers', 'Grands projets', 'Le groupe', 'Présenter un projet', 'Contact'];
+  var DEFAULT_CHIPS = ['Nos métiers', 'Grands projets', 'Nous recrutons', 'Présenter un projet', 'Contact'];
 
   function norm(s) {
     return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9+ ]/g, ' ').replace(/\s+/g, ' ');

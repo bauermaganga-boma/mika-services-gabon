@@ -31,6 +31,7 @@
       <a href="#projets">Projets</a>
       <a href="#videos">Vidéos</a>
       <a href="#actualites">Actualités</a>
+      <a href="#carrieres" class="nav__jobs">Carrières <span class="nav__badge" data-jobs-count>9</span></a>
       <a href="#contact" class="btn btn--gold btn--sm nav__cta">Nous contacter</a>
     </nav>
     <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
@@ -57,6 +58,7 @@
       <a href="#contact" class="btn btn--gold">Nous contacter</a>
       <a href="#projets" class="btn btn--ghost">Voir nos projets</a>
     </div>
+    <a href="#carrieres" class="hero__jobs reveal"><span class="hero__jobs-dot"></span><strong>Nous recrutons</strong><span class="hero__jobs-sep"></span><span><b data-jobs-count>9</b> offres<span class="hero__jobs-long"> ouvertes</span></span><span class="hero__jobs-arrow" aria-hidden="true">→</span></a>
   </div>
   <div class="hero__strip">
     <div class="container hero__strip-inner">
@@ -492,6 +494,59 @@
   </div>
 </section>
 
+<!-- ============ CARRIÈRES ============ -->
+<section class="section section--cream carrieres" id="carrieres">
+  <div class="container">
+    <div class="section__head">
+      <p class="eyebrow reveal">10 — Carrières</p>
+      <h2 class="title reveal">Rejoignez les équipes qui construisent le Gabon de demain</h2>
+      <p class="section__lead reveal">Ingénieurs, conducteurs de travaux, techniciens, mécaniciens, opérateurs d'engins : MIKA Services recrute des talents pour ses chantiers du Grand Libreville. Consultez nos offres ouvertes et postulez en ligne en quelques minutes.</p>
+    </div>
+
+    <ul class="why">
+      <li class="reveal"><span class="why__num">500+</span><strong>collaborateurs</strong><p>Une entreprise gabonaise en pleine croissance, renforcée par l'intégration de Colas Gabon.</p></li>
+      <li class="reveal"><span class="why__num"><svg viewBox="0 0 24 24"><path d="M4 20h16M6 20V10l6-5 6 5v10"/></svg></span><strong>Des chantiers qui comptent</strong><p>Échangeurs, voies express, berges : des ouvrages utiles à tout un pays.</p></li>
+      <li class="reveal"><span class="why__num"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/></svg></span><strong>Apprendre et évoluer</strong><p>Formation sur le terrain, encadrement par des ingénieurs expérimentés.</p></li>
+      <li class="reveal"><span class="why__num"><svg viewBox="0 0 24 24"><path d="M8 12l3 3 5-6"/><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6z"/></svg></span><strong>Sécurité avant tout</strong><p>Équipements de protection fournis et culture sécurité sur chaque chantier.</p></li>
+    </ul>
+
+    <div class="jobs-bar reveal" role="search">
+      <label class="jobs-search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <input type="search" id="jobs-q" placeholder="Rechercher un poste, un métier…" aria-label="Rechercher une offre">
+      </label>
+      <select id="jobs-dept" aria-label="Filtrer par métier"><option value="">Tous les métiers</option></select>
+      <select id="jobs-lieu" aria-label="Filtrer par lieu"><option value="">Tous les lieux</option></select>
+      <select id="jobs-contrat" aria-label="Filtrer par contrat"><option value="">Tous les contrats</option></select>
+    </div>
+    <p class="jobs-count" id="jobs-count" aria-live="polite"></p>
+
+    <div class="jobs" id="jobs-list"></div>
+    <p class="jobs-empty" id="jobs-empty" hidden>Aucune offre ne correspond à votre recherche. Essayez un autre filtre ou envoyez-nous une candidature spontanée.</p>
+
+    <div class="spontanee reveal">
+      <div>
+        <h3>Vous ne trouvez pas le poste idéal ?</h3>
+        <p>Envoyez-nous une candidature spontanée : nous étudions tous les profils pour nos futurs chantiers.</p>
+      </div>
+      <button type="button" class="btn btn--gold" data-apply="SPONTANEE">Candidature spontanée</button>
+    </div>
+
+    <div class="process">
+      <h3 class="subtitle reveal">Comment se déroule le recrutement ?</h3>
+      <ol class="process__steps">
+        <li class="reveal"><span>1</span><strong>Candidature en ligne</strong><p>CV et lettre de motivation envoyés depuis cette page.</p></li>
+        <li class="reveal"><span>2</span><strong>Étude du dossier</strong><p>Réponse de nos ressources humaines sous 15 jours.</p></li>
+        <li class="reveal"><span>3</span><strong>Entretiens</strong><p>Échange RH puis entretien technique avec le responsable.</p></li>
+        <li class="reveal"><span>4</span><strong>Intégration</strong><p>Accueil sécurité et prise de poste sur chantier.</p></li>
+      </ol>
+    </div>
+
+    <p class="jobs-demo">Offres présentées à titre d'exemple dans cette proposition de site. Elles seront remplacées par les offres réelles de MIKA Services.</p>
+  </div>
+</section>
+
+
 <!-- ============ CONTACT ============ -->
 <section class="section section--dark contact" id="contact">
   <div class="container contact__inner">
@@ -547,11 +602,116 @@
       <a href="#projets">Projets</a>
       <a href="#videos">Vidéos</a>
       <a href="#actualites">Actualités</a>
+      <a href="#carrieres">Carrières</a>
       <a href="#contact">Contact</a>
     </nav>
     <p class="footer__copy">© <span id="year">2026</span> MIKA SERVICES — Libreville. Tous droits réservés. <span class="footer__credit">Site développé par <strong>Rouana</strong>.</span><br><small class="footer__src">Images et vidéos : MIKA Services (LinkedIn), AGP, Gabon Media Time, ministère des Travaux publics, GMT TV.</small></p>
   </div>
 </footer>
+
+<!-- Offre d'emploi : détail + candidature -->
+<div class="job-modal" id="job-modal" role="dialog" aria-modal="true" aria-labelledby="job-title" aria-hidden="true">
+  <div class="job-modal__panel">
+    <button class="job-modal__close" type="button" data-job-close aria-label="Fermer">&times;</button>
+
+    <!-- Étape 1 : détail de l'offre -->
+    <div class="job-view" id="job-detail">
+      <p class="job-view__ref" id="job-ref"></p>
+      <h3 class="job-view__title" id="job-title"></h3>
+      <ul class="job-tags" id="job-tags"></ul>
+      <p class="job-view__intro" id="job-intro"></p>
+      <div class="job-view__cols">
+        <div><h4>Vos missions</h4><ul class="job-list" id="job-missions"></ul></div>
+        <div><h4>Votre profil</h4><ul class="job-list" id="job-profil"></ul></div>
+      </div>
+      <h4>Ce que nous offrons</h4>
+      <ul class="job-list job-list--offer" id="job-offre"></ul>
+      <div class="job-view__actions">
+        <button type="button" class="btn btn--gold" id="job-apply-btn">Postuler à cette offre</button>
+        <a class="btn btn--outline" id="job-share" target="_blank" rel="noopener">Partager sur WhatsApp</a>
+        <button type="button" class="job-copy" id="job-copy">Copier le lien</button>
+      </div>
+    </div>
+
+    <!-- Étape 2 : formulaire de candidature -->
+    <form class="form job-form" id="job-form" novalidate hidden>
+      <button type="button" class="job-back" data-job-back>← Retour à l'offre</button>
+      <h3>Postuler</h3>
+      <p class="job-form__poste" id="job-form-poste"></p>
+      <div class="form__row">
+        <label>Nom<input type="text" name="nom" required autocomplete="family-name"></label>
+        <label>Prénom<input type="text" name="prenom" required autocomplete="given-name"></label>
+      </div>
+      <div class="form__row">
+        <label>Téléphone<input type="tel" name="tel" required autocomplete="tel" placeholder="+241 …"></label>
+        <label>Courriel<input type="email" name="email" required autocomplete="email"></label>
+      </div>
+      <div class="form__row">
+        <label>Ville de résidence<input type="text" name="ville" autocomplete="address-level2"></label>
+        <label>Années d'expérience
+          <select name="experience">
+            <option>Débutant / moins d'un an</option>
+            <option>1 à 3 ans</option>
+            <option>3 à 5 ans</option>
+            <option>5 à 10 ans</option>
+            <option>Plus de 10 ans</option>
+          </select>
+        </label>
+      </div>
+      <div class="form__row">
+        <label>Diplôme le plus élevé
+          <select name="diplome">
+            <option>Sans diplôme / CAP</option>
+            <option>BEP / BT / Bac</option>
+            <option>BTS / DUT / Licence</option>
+            <option>Master / Ingénieur</option>
+            <option>Doctorat</option>
+          </select>
+        </label>
+        <label>Disponibilité
+          <select name="dispo">
+            <option>Immédiate</option>
+            <option>Sous 1 mois</option>
+            <option>Sous 3 mois</option>
+          </select>
+        </label>
+      </div>
+      <div class="drops">
+        <label class="drop" data-drop="cv">
+          <input type="file" name="cv" accept=".pdf,.doc,.docx" required>
+          <span class="drop__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 3H6v18h12V7z"/><path d="M14 3v4h4M12 11v6M9 14l3-3 3 3"/></svg></span>
+          <span class="drop__txt"><strong>CV</strong> <em>obligatoire</em><small>PDF ou Word, 5 Mo maximum</small></span>
+          <span class="drop__file" data-file></span>
+        </label>
+        <label class="drop" data-drop="lettre">
+          <input type="file" name="lettre" accept=".pdf,.doc,.docx">
+          <span class="drop__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 3H6v18h12V7z"/><path d="M14 3v4h4M12 11v6M9 14l3-3 3 3"/></svg></span>
+          <span class="drop__txt"><strong>Lettre de motivation</strong><small>PDF ou Word, 5 Mo maximum</small></span>
+          <span class="drop__file" data-file></span>
+        </label>
+      </div>
+      <label>Un mot pour le recruteur (facultatif)<textarea name="message" rows="3" placeholder="Présentez-vous en quelques lignes…"></textarea></label>
+      <label class="check"><input type="checkbox" name="consent" required><span>J'accepte que MIKA Services utilise mes données pour traiter ma candidature et la conserve 24 mois.</span></label>
+      <button type="submit" class="btn btn--gold btn--block">Envoyer ma candidature</button>
+      <p class="form__note" id="job-form-note"></p>
+    </form>
+
+    <!-- Étape 3 : confirmation -->
+    <div class="job-done" id="job-done" hidden>
+      <span class="job-done__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+      <h3>Candidature enregistrée !</h3>
+      <p>Merci <strong id="job-done-name"></strong>. Votre candidature au poste <strong id="job-done-poste"></strong> a bien été reçue.</p>
+      <p class="job-done__ref">Référence de votre dossier : <strong id="job-done-ref"></strong></p>
+      <p>Notre équipe des ressources humaines étudie votre dossier et vous recontacte sous 15 jours.</p>
+      <p class="jobs-demo">Démonstration : dans la version finale, le CV et la lettre sont transmis automatiquement au service RH (boîte e-mail ou tableau de suivi des candidatures).</p>
+      <div class="job-view__actions">
+        <a class="btn btn--gold" id="job-done-wa" target="_blank" rel="noopener">Confirmer sur WhatsApp</a>
+        <button type="button" class="btn btn--outline" data-job-close>Voir les autres offres</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- Lightbox -->
 <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Aperçu de l'image">
@@ -589,6 +749,7 @@
 </section>
 
 <script src="assets/js/main.js"></script>
+<script src="assets/js/carrieres.js"></script>
 <script src="assets/js/assistant.js"></script>
 </body>
 </html>
